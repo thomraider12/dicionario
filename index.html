@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dicionário | Tomás Afonso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Dicionário Português</h1>
+      <input placeholder="Procura uma palavra aqui..." type="text" class="input" id="input" />
+      <p class="info-text" id="info-text">Escreve uma palavra: </p>
+      <div class="meaning-container" id="meaning-container">
+        <p>Palavra: <span class="title" id="title">___</span></p>
+        <p>Significado: <span class="meaning" id="meaning">___</span></p>
+        <button onclick="speakWord(document.getElementById('title').innerText)">🔊 Ouvir</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>&copy; <a href="https://thomraider12.github.io/thomraider12/">Tomás Afonso</a>. 2024.</footer>
+  </body>
+</html>

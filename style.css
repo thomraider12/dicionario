@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, yellow, blue);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 28px;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    margin: 10px;
+    max-width: 450px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.heading {
+    font-size: 28px;
+}
+
+.input {
+    height: 53px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    padding: 0 42px;
+    border-radius: 5px;
+}
+
+.meaning-container {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Fundo transparente para destacar */
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: white; /* Cor preta para o link */
+    text-decoration: underline; /* Remove o sublinhado */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave */
+
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse, opcional */
+    color: darkgray; /* Cor alternativa no hover, opcional */
+}
