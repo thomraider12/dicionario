@@ -64,3 +64,7 @@ inputEl.addEventListener("keyup", (e) => {
     fetchAPI(e.target.value);
   }
 });
+
+inputEl.addEventListener('input', () => {
+  input.value = input.value.toLowerCase();
+});
