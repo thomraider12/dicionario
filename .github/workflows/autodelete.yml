@@ -1,0 +1,21 @@
+name: Auto Delete index.html
+
+on:
+  schedule:
+    - cron: "0 0 7 6 *"
+jobs:
+  delete-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Apagar o ficheiro index.html
+        run: |
+          rm -f index.html
+          git config --global user.name "Auto Cleanup Bot"
+          git config --global user.email "bot@github.com"
+          git add .
+          git commit -m "Remoção automática do site em 7 de junho de 2025, devido ao não funcionamento do serviço"
+          git push
